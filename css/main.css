@@ -253,4 +253,8 @@ h1{
         align-items: center;
         justify-content: center;
     }
+    .card h1{
+        overflow:hidden ;
+        width: 100%;
+    }
 }
