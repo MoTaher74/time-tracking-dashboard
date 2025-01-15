@@ -1,4 +1,4 @@
-const jsonFilePath = "./data.json";
+const jsonFilePath = "data.json";
 
 const timeFrames = document.querySelectorAll(".timeframes li");
 const contentCards = document.querySelector(".content");
