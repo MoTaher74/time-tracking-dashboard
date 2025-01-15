@@ -1,4 +1,4 @@
-const jsonFilePath = "../data.json";
+const jsonFilePath = "./data.json";
 
 const timeFrames = document.querySelectorAll(".timeframes li");
 const contentCards = document.querySelector(".content");
@@ -39,7 +39,6 @@ function updateCards(data, timeframe) {
   });
 }
 
-// إضافة الأحداث للتبديل بين الإطارات الزمنية
 function setupTimeframeSwitch(data) {
   timeFrames.forEach((timeframe) => {
     timeframe.addEventListener("click", () => {
@@ -49,11 +48,9 @@ function setupTimeframeSwitch(data) {
     });
   });
 
-  // التهيئة بالإطار الأسبوعي
   timeFrames[1].click();
 }
 
-// تحميل البيانات وتهيئة المشروع
 async function initDashboard() {
   const data = await fetchData();
   if (data) {
